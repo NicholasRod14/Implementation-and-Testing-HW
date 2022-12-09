@@ -1,0 +1,16 @@
+//logout function
+
+<?php
+
+session_start();
+ 
+
+$_SESSION = array();
+ 
+
+session_destroy();
+ 
+//redirects to login page
+header("location: login.php");
+exit;
+?>
